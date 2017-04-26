@@ -1,0 +1,90 @@
+
+<div class="jumbotron" style="background:url('http://www.tendersinfo.com/blogs/wp-content/uploads/2017/03/Drugs-and-Medicine.jpg') no-repeat center center fixed; -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+  <div style="margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);">
+  <div style= 'margin: 5%;
+    font-weight: bold;
+    color: #000000;'>
+  <h1><a href="https://aumet.me/">Aumit.me</a></h1> 
+  <h3>Get medical tenders, projects, and news related to your products</h3> 
+  </div>
+  </div>
+</div>
+  
+  <h3>Check some of our tenders</h3>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <ul class="nav navbar-nav">
+    <li><a ng-click="tab = all">All tenders</a></li>
+  <li><a ng-click="tab = pharma ">Pharmaceutical</a></li>
+    <li><a ng-click= "tab = med">Medical Equipment</a></li>
+    <li><a ng-click= "tab = nutrition">Nutrition and Cosmetic</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <ul class="list-inline">
+    <li></li>
+
+  </ul>
+</div>
+    <div ng-if="tab===all" ><h3>All tenders</h3>
+   <div ng-repeat='data in all' >
+  <div class='well'>
+    <p><i>Tender Notice Type:</i>{{data.type}}</p>
+    <p><i>Country :</i>{{data.country}}</p>
+    <p><i>Tender Category:</i>{{data.category}}</p>
+    <p><i>Description:</i>{{data.desc}}</p>
+    <p><i>Action Deadline:</i>{{data.deadline}}</p>
+    <p><i>Ref. no.:</i>{{data.Refno}}</p>
+</div>
+  </div>
+  </div>
+
+<div ng-if="tab===pharma"> <h3>Pharmaceutical</h3>
+  <div ng-repeat='data in pharma' >
+  <div class='well'>
+    <p><i>Tender Notice Type:</i>{{data.type}}</p>
+    <p><i>Country :</i>{{data.country}}</p>
+    <p><i>Tender Category:</i>{{data.category}}</p>
+    <p><i>Description:</i>{{data.desc}}</p>
+    <p><i>Action Deadline:</i>{{data.deadline}}</p>
+    <p><i>Ref. no.:</i>{{data.Refno}}</p>
+</div>
+  </div>
+</div>
+
+  <div ng-if="tab===med"><h3>Medical Equipment</h3>
+    <div ng-repeat='data in med' >
+  <div class='well'>
+    <p><i>Tender Notice Type:</i>{{data.type}}</p>
+    <p><i>Country :</i>{{data.country}}</p>
+    <p><i>Tender Category:</i>{{data.category}}</p>
+    <p><i>Description:</i>{{data.desc}}</p>
+    <p><i>Action Deadline:</i>{{data.deadline}}</p>
+    <p><i>Ref. no.:</i>{{data.Refno}}</p>
+</div>
+  </div>
+  </div>
+
+<div ng-if="tab===nutrition" ><h3>Nutrition and Cosmetic</h3>
+    <div ng-repeat='data in nutrition' >
+  <div class='well'>
+    <p><i>Tender Notice Type:</i>{{data.type}}</p>
+    <p><i>Country :</i>{{data.country}}</p>
+    <p><i>Tender Category:</i>{{data.category}}</p>
+    <p><i>Description:</i>{{data.desc}}</p>
+    <p><i>Action Deadline:</i>{{data.deadline}}</p>
+    <p><i>Ref. no.:</i>{{data.Refno}}</p>
+</div>
+  </div>
+  </div>

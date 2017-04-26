@@ -1,0 +1,30 @@
+body {
+}
+
+.search-bar {
+  width:100%;
+  max-width:500px;
+  margin-bottom: 25px;
+}
+
+.avatar img {
+  height: 200px; 
+  width: 200px;
+}
+
+.price {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.content {
+  border: 5px;
+}
+
+.item img {
+  width:100%;
+}
+
+.info {
+  font-weight: bolder;
+}
